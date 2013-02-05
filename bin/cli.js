@@ -10,13 +10,17 @@ var getProps = require('../lib/getProps.js')
 ;(function () {
   var arg = process.argv.splice(2)
     , props = getProps()
-    , path = arg[0] || process.cwd()
+    , path = arg[0] || process.cwd();
+
+    if (args[1]) {
+    	prop.endpoint = args[1];
+    }
 
   if (statIsGit(path)) {
-    push(props, path)
+    push(props, path);
   } else if (statSync(path).isFile()) {
-    cp(props, arg)
+    cp(props, arg);
   } else {
-    cpr(props, path)
+    cpr(props, path);
   }
-})()
+})();
