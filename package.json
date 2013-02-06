@@ -1,43 +1,40 @@
 {
-  "name": "pushup",
-  "version": "0.3.5",
-  "main": "index.js",
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "tap test/*"
-  },
-  "bin": {
-    "pushup": "./bin/cli.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/michaelnisi/pushup.git"
-  },
-  "author": {
-    "name": "Michael Nisi",
-    "email": "michael.nisi@gmail.com",
-    "url": "http://michaelnisi.com"
-  },
-  "license": "MIT",
-  "description": "upload last commit to S3",
-  "keywords": [
-    "upload",
-    "commit",
-    "S3"
-  ],
-  "dependencies": {
-    "fstream": "0.1.x",
-    "event-stream": "3.0.x",
-    "knox": "0.3.x",
-    "cop": ""
-  },
-  "devDependencies": {
-    "tap": ">=0.3.1"
-  },
-  "engines": {
-    "node": ">=0.8.0"
-  }
+	"name": "pushup",
+	"version": "0.3.6",
+	"main": "index.js",
+	"directories": {
+		"example": "example",
+		"test": "test"
+	},
+	"scripts": {
+		"test": "tap test/*"
+	},
+	"bin": {
+		"pushup": "./bin/cli.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/michaelnisi/pushup.git"
+	},
+	"author": {
+		"name": "Michael Nisi",
+		"email": "michael.nisi@gmail.com",
+		"url": "http://michaelnisi.com"
+	},
+	"license": "MIT",
+	"description": "upload last commit to S3",
+	"keywords": ["upload", "commit", "S3"],
+	"dependencies": {
+		"fstream": "0.1.x",
+		"commander": "1.1.x",
+		"event-stream": "3.0.x",
+		"knox": "0.5.x",
+		"cop": "0.2.x"
+	},
+	"devDependencies": {
+		"tap": ">=0.3.1"
+	},
+	"engines": {
+		"node": ">=0.8.0"
+	}
 }
